@@ -1,0 +1,31 @@
+Lambda Enterprises: publishing to paulnapierskie.com
+
+This folder holds three files:
+
+index.html: the whole website
+CNAME: tells GitHub Pages to serve it at paulnapierskie.com
+README.md: these steps
+Before you publish
+
+Search index.html for square brackets and replace each placeholder:
+
+[YOUR EMAIL ADDRESS] (appears 3 times)
+[CITY, STATE] (appears 2 times)
+[PROJECT TITLE], [SERVICE] and the one-sentence description (3 project cards)
+[ARTICLE TITLE], [TOPIC], [YEAR] (3 insight rows)
+[PROJECT IMAGE] boxes (replace with <img> tags, or leave as blank panels)
+Publish with GitHub Pages
+Create a free account at github.com and make a new public repository, for example lambda-site.
+Upload all three files (Add file, then Upload files). Keep CNAME exactly as named, with no extension.
+Open the repository's Settings, then Pages. Under Source choose Deploy from a branch, pick main and / (root), and save.
+Under Custom domain, enter paulnapierskie.com and save. Tick Enforce HTTPS once it becomes available.
+Point your domain at GitHub
+
+In your registrar's DNS settings, add these records:
+
+Type	Host	Value
+A	@	185.199.108.153
+A	@	185.199.109.153
+A	@	185.199.110.153
+A	@	185.199.111.153
+CNAME	www	YOUR-GITHUB-USERNAME.github.io
